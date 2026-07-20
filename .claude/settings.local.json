@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\damit\\\\OneDrive\\\\Documents\\\\myPortfolioWork\\\\assets\" | Out-Null; Write-Output \"assets/ ready\"; $n = \\(Get-Command node -ErrorAction SilentlyContinue\\); if \\($n\\) { Write-Output \"node: $\\($n.Source\\)\" } else { Write-Output \"node: not found\" })"
+    ]
+  }
+}
