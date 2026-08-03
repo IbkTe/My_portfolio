@@ -1,0 +1,53 @@
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #faf8f5; color: #14120f; }
+    a { color: #c8863a; }
+    a:hover { color: #8f5a1e; }
+    ::selection { background: #f5c97a; color: #14120f; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+
+/* interactive states (converted from inline hover/focus) */
+.ps1:focus { left:0; }
+.ps2:hover { color:#c8863a;border-color:#c8863a; }
+.ps2:focus { outline:2px solid #c8863a;outline-offset:4px; }
+.ps3:hover { color:#c8863a;border-color:#c8863a; }
+.ps3:focus { outline:2px solid #c8863a;outline-offset:4px; }
+.ps4:hover { color:#c8863a;border-color:#c8863a; }
+.ps4:focus { outline:2px solid #c8863a;outline-offset:4px; }
+.ps5:hover { color:#c8863a;border-color:#c8863a; }
+.ps5:focus { outline:2px solid #c8863a;outline-offset:4px; }
+.ps6:hover { background:#c8863a; }
+.ps6:focus { outline:2px solid #c8863a;outline-offset:3px; }
+.ps7:hover { background:#c8863a; transform:translateY(-2px); box-shadow:0 10px 28px rgba(200,134,58,.28); }
+.ps7:focus { outline:2px solid #c8863a;outline-offset:3px; }
+.ps8:hover { transform:translateX(3px); }
+.ps9:hover { background:#14120f; color:#faf8f5; }
+.ps9:focus { outline:2px solid #c8863a;outline-offset:3px; }
+.ps10:hover { box-shadow:0 20px 48px rgba(15,14,13,.12); translate:0 -4px; }
+.ps11:hover { transform:scale(1.035); }
+.ps12:hover { transform:translateX(3px); }
+.ps13:hover { box-shadow:0 16px 36px rgba(15,14,13,.1); translate:0 -4px; }
+.ps14:hover { transform:scale(1.045); }
+.ps15:hover { transform:translateX(3px); }
+.ps16:hover { box-shadow:0 16px 36px rgba(15,14,13,.1); translate:0 -4px; }
+.ps17:hover { transform:scale(1.045); }
+.ps18:hover { transform:translateX(3px); }
+.ps19:hover { box-shadow:0 16px 36px rgba(15,14,13,.1); translate:0 -4px; }
+.ps20:hover { transform:scale(1.045); }
+.ps21:hover { transform:scale(1.045); }
+.ps22:hover { transform:translateX(3px); }
+.ps23:hover { box-shadow:0 16px 36px rgba(15,14,13,.1); translate:0 -4px; }
+.ps24:hover { transform:scale(1.045); }
+.ps25:hover { transform:translateX(3px); }
+.ps26:hover { color:#c8863a; }
+.ps27:hover { color:#faf8f5; border-color:#faf8f5; }
+.ps28:hover { background:#f5c97a; color:#14120f; transform:translateY(-2px); }
+.ps28:focus { outline:2px solid #f5c97a;outline-offset:3px; }
+.ps29:hover { color:#f5c97a; border-color:#f5c97a; }
+.ps30:hover { color:#f5c97a; border-color:#f5c97a; }
+.ps31:hover { color:#f5c97a; }
+.ps32:hover { color:#f5c97a; }
+.ps33:hover { color:#f5c97a; }

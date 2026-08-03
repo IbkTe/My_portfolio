@@ -1,0 +1,15 @@
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #faf8f5; color: #14120f; }
+    a { color: #c8863a; }
+    a:hover { color: #8f5a1e; }
+    ::selection { background: #f5c97a; color: #14120f; }
+
+/* interactive states (converted from inline hover/focus) */
+.ps1:hover { color:#c8863a; }
+.ps2:hover { color:#c8863a; }
+.ps3:hover { color:#c8863a; }
+.ps4:hover { background:#c8863a; }
+.ps5:hover { color:#c8863a; }
+.ps6:hover { opacity:.7; }
+.ps7:hover { color:#f5c97a; }

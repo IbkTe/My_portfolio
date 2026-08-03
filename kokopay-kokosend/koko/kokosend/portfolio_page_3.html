@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kokosend &mdash; Screen 03 | Damilola Tolufashe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <style>
+    :root {
+      --pf-bg:#faf8f5; --pf-ink:#14120f; --pf-muted:#6b645b;
+      --pf-line:#e4dfd7; --pf-accent:#c8863a;
+    }
+    body { margin:0; }
+    .pf-page { font-family:'DM Sans', system-ui, sans-serif; color:var(--pf-ink); background:var(--pf-bg); line-height:1.6; min-height:100vh; }
+
+    /* ---------- sticky nav ---------- */
+    .pf-nav { position:sticky; top:0; z-index:1000; background:rgba(250,248,245,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--pf-line); }
+    .pf-nav__top { max-width:1120px; margin:0 auto; padding:14px clamp(20px,4vw,48px); display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+    .pf-brand { font-family:'Playfair Display', Georgia, serif; font-size:19px; font-weight:700; color:var(--pf-ink); text-decoration:none; transition:color .18s ease; }
+    .pf-brand:hover { color:var(--pf-accent); }
+    .pf-nav__right { display:flex; align-items:center; gap:clamp(12px,2vw,20px); flex-wrap:wrap; }
+    .pf-tag { font-family:'DM Mono', ui-monospace, monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--pf-muted); white-space:nowrap; }
+    .pf-back { display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--pf-ink); text-decoration:none; background:#fff; border:1px solid var(--pf-line); padding:9px 17px; border-radius:999px; white-space:nowrap; transition:background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease; }
+    .pf-back:hover { background:var(--pf-ink); border-color:var(--pf-ink); color:var(--pf-bg); transform:translateX(-2px); }
+    .pf-back i { font-style:normal; font-size:15px; line-height:1; }
+
+    /* ---------- carousel rail ---------- */
+    .pf-rail { border-top:1px solid var(--pf-line); background:rgba(255,255,255,.55); }
+    .pf-rail__in { max-width:1120px; margin:0 auto; padding:10px clamp(20px,4vw,48px); display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .pf-dots { list-style:none; display:flex; align-items:center; gap:6px; margin:0; padding:0; flex-wrap:wrap; justify-content:center; }
+    .pf-dot { display:inline-flex; align-items:center; justify-content:center; min-width:36px; height:34px; padding:0 12px; font-family:'DM Mono', ui-monospace, monospace; font-size:12px; color:var(--pf-muted); text-decoration:none; border:1px solid transparent; border-radius:999px; transition:background .18s ease, color .18s ease, border-color .18s ease; }
+    .pf-dot:hover { color:var(--pf-ink); background:#fff; border-color:var(--pf-line); }
+    .pf-dot.is-active { color:var(--pf-bg); background:var(--pf-ink); border-color:var(--pf-ink); }
+    .pf-arrow { display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:600; color:var(--pf-ink); text-decoration:none; background:#fff; border:1px solid var(--pf-line); padding:8px 16px; border-radius:999px; white-space:nowrap; transition:background .18s ease, color .18s ease, border-color .18s ease; }
+    .pf-arrow:hover { background:var(--pf-ink); border-color:var(--pf-ink); color:var(--pf-bg); }
+    .pf-arrow--off { opacity:.3; pointer-events:none; }
+    .pf-arrow i { font-style:normal; font-size:15px; line-height:1; }
+
+    /* ---------- stage ---------- */
+    .pf-stage { max-width:1600px; margin:clamp(30px,4vw,56px) auto clamp(30px,4vw,52px); padding:0 clamp(20px,4vw,48px); }
+    .pf-cap { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:0 6px 14px; font-family:'DM Mono', ui-monospace, monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--pf-muted); }
+    .pf-frame { margin:0; padding:clamp(14px,2vw,32px); background:#fff; border:1px solid var(--pf-line); border-radius:22px; box-shadow:0 20px 50px rgba(20,18,15,.07); }
+    .pf-frame img { width:100%; height:auto; display:block; border:1px solid #ece7df; border-radius:12px; }
+
+    /* ---------- bottom pager ---------- */
+    .pf-pager { max-width:1120px; margin:0 auto; padding:0 clamp(20px,4vw,48px) clamp(48px,7vw,88px); display:flex; align-items:center; justify-content:space-between; gap:14px; }
+    .pf-pager__btn { display:inline-flex; flex-direction:column; gap:1px; min-width:148px; padding:12px 20px; background:#fff; border:1px solid var(--pf-line); border-radius:14px; text-decoration:none; transition:border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+    .pf-pager__btn:hover { border-color:var(--pf-ink); box-shadow:0 12px 26px rgba(20,18,15,.08); transform:translateY(-2px); }
+    .pf-pager__btn--next { margin-left:auto; align-items:flex-end; text-align:right; }
+    .pf-pager__btn--off { opacity:.3; pointer-events:none; }
+    .pf-pager__k { font-family:'DM Mono', ui-monospace, monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--pf-muted); }
+    .pf-pager__v { font-size:14px; font-weight:600; color:var(--pf-ink); }
+    .pf-hint { font-family:'DM Mono', ui-monospace, monospace; font-size:11px; letter-spacing:.06em; color:var(--pf-muted); text-align:center; }
+
+    @media (max-width:760px) {
+      .pf-rail__in { flex-wrap:wrap; justify-content:center; }
+      .pf-hint { display:none; }
+      .pf-pager__btn { min-width:0; padding:11px 15px; }
+      .pf-tag { display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="pf-page">
+
+  <nav class="pf-nav">
+    <div class="pf-nav__top">
+      <a class="pf-brand" href="../../index.html">Damilola Tolufashe</a>
+      <div class="pf-nav__right">
+        <span class="pf-tag">Kokosend &middot; Light Mode</span>
+        <a class="pf-back" href="../../index.html"><i aria-hidden="true">&#8592;</i> Back to Portfolio</a>
+      </div>
+    </div>
+    <div class="pf-rail">
+      <div class="pf-rail__in">
+        <a class="pf-arrow" href="portfolio_page_2.html" rel="prev"><i aria-hidden="true">&#8249;</i> Prev</a>
+        <ul class="pf-dots">
+          <li><a class="pf-dot" href="portfolio_landing_page.html" title="Full Site Overview">Overview</a></li>
+          <li><a class="pf-dot" href="portfolio_page_1.html" title="Screen 01">01</a></li>
+          <li><a class="pf-dot" href="portfolio_page_2.html" title="Screen 02">02</a></li>
+          <li><a class="pf-dot is-active" href="portfolio_page_3.html" aria-current="page" title="Screen 03">03</a></li>
+          <li><a class="pf-dot" href="portfolio_page_4.html" title="Screen 04">04</a></li>
+          <li><a class="pf-dot" href="portfolio_page_5.html" title="Screen 05">05</a></li>
+        </ul>
+        <a class="pf-arrow" href="portfolio_page_4.html" rel="next">Next <i aria-hidden="true">&#8250;</i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pf-stage">
+    <div class="pf-cap">
+      <span>Kokosend &mdash; Screen 03</span>
+      <span>03 of 05</span>
+    </div>
+    <figure class="pf-frame">
+      <img src="ks/3.svg" alt="Kokosend website redesign - Screen 03" />
+    </figure>
+  </main>
+
+  <div class="pf-pager">
+    <a class="pf-pager__btn" href="portfolio_page_2.html" rel="prev"><span class="pf-pager__k">&#8592; Previous</span><span class="pf-pager__v">Screen 02</span></a>
+    <span class="pf-hint">Use &#8592; &#8594; keys</span>
+    <a class="pf-pager__btn pf-pager__btn--next" href="portfolio_page_4.html" rel="next"><span class="pf-pager__k">Next &#8594;</span><span class="pf-pager__v">Screen 04</span></a>
+  </div>
+
+</div>
+
+<script src="../../js/main.js"></script>
+<script>
+  (function () {
+    var prev = 'portfolio_page_2.html';
+    var next = 'portfolio_page_4.html';
+    document.addEventListener('keydown', function (e) {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      var t = e.target || {};
+      if (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable) return;
+      if (e.key === 'ArrowLeft' && prev) { window.location.href = prev; }
+      if (e.key === 'ArrowRight' && next) { window.location.href = next; }
+    });
+  })();
+</script>
+</body>
+</html>
