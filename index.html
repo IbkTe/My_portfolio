@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Damilola Tolufashe | Product Designer &amp; UI/UX Designer</title>
+  <title>Damilola Tolufashe | Product Designer &amp; Front-End Developer</title>
+  <meta name="description" content="Damilola Tolufashe is a Product Designer and Front-End Developer with six years of experience designing and building web and mobile products." />
   <!-- favicon -->
   <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
@@ -20,6 +21,12 @@
     .figma-badge:hover { transform:translateY(-2px); border-color:#c8863a; box-shadow:0 10px 24px rgba(15,14,13,.20); }
     .figma-badge svg { display:block; }
     .work-card-wrap { position:relative; display:grid; }
+    @media (max-width: 760px) {
+      [style*="grid-template-columns:1.15fr"], [style*="grid-template-columns:.85fr"] { grid-template-columns:1fr !important; }
+      [style*="minmax(360px,1fr)"], [style*="minmax(400px,1fr)"], [style*="minmax(320px,1fr)"] { grid-template-columns:1fr !important; }
+      #about [style*="aspect-ratio:3/4"] { max-width:420px; }
+    }
+    a:focus-visible { outline:2px solid #c8863a; outline-offset:3px; }
   </style>
 </head>
 <body>
@@ -37,7 +44,7 @@
         <li><a class="ps2" href="#work" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">Work</a></li>
         <li><a class="ps3" href="#about" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">About</a></li>
         <li><a class="ps4" href="#experience" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">Experience</a></li>
-        <li><a class="ps5" href="#" title="Add résumé PDF" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">Certificates</a></li>
+        <li><a class="ps5" href="Damilola_Tolufashe_CV.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">CV</a></li>
         <li>
           <a class="ps6" href="#contact" style="font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; letter-spacing:.03em; color:#faf8f5; background:#14120f; padding:10px 20px; border-radius:8px; text-decoration:none; transition:background .2s;">Contact</a>
         </li>
@@ -53,13 +60,13 @@
       <div style="animation:fadeUp .7s ease both; min-width:280px;">
         <p style="font-family:'DM Mono',monospace; font-size:12px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:#c8863a; display:flex; align-items:center; gap:12px; margin:0 0 24px;">
           <span style="display:block; width:28px; height:1px; background:#c8863a;"></span>
-          Product Designer · UI/UX Designer
+          Product Designer · Front-End Developer
         </p>
         <h1 style="font-family:'Playfair Display',Georgia,serif; font-size:clamp(36px,5.2vw,60px); font-weight:700; line-height:1.08; letter-spacing:-.015em; color:#14120f; margin:0 0 24px;">
           Designing clear digital experiences from complex ideas.
         </h1>
         <p style="font-size:17px; color:#3a3632; line-height:1.7; max-width:480px; margin:0 0 32px;">
-          I'm Damilola Tolufashe, a Product Designer and UI/UX Designer creating thoughtful, user-centred experiences across web and mobile products.
+          I'm Damilola Tolufashe. For six years I've designed and built web and mobile products, from research and user flows to the interface and the front-end code that ships it.
         </p>
         <p style="font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.06em; color:#7a736a; display:flex; align-items:center; gap:8px; margin:0 0 36px;">
           <span style="width:7px; height:7px; border-radius:50%; background:#4a8c5c; display:block; flex-shrink:0;"></span>
@@ -75,11 +82,11 @@
           </a>-->
 
       <a class="ps9"
-   href="https://drive.google.com/uc?export=download&id=1Ff36YnQ1Ls3tttkM3zvDFiIONz_KvfMX"
+   href="Damilola_Tolufashe_CV.pdf" download
    rel="noopener noreferrer"
-   title="Download Résumé"
+   title="Download my CV"
    style="display:inline-flex; align-items:center; gap:8px; padding:15px 28px; background:transparent; color:#14120f; border:1.5px solid #14120f; font-size:14px; font-weight:600; border-radius:8px; text-decoration:none; transition:all .2s;">
-    Download Résumé
+    Download CV
 </a>
 
         </div>
@@ -100,31 +107,67 @@
         <span style="width:24px; height:1px; background:#c8863a; display:block;"></span>
         Selected work
       </p>
-      <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,3.4vw,42px); font-weight:700; line-height:1.15; margin:0 0 14px; color:#14120f;">A selection of client work and self-initiated explorations</h2>
-      <p style="font-size:15.5px; color:#3a3632; line-height:1.7; margin:0;">Product experiences across fintech, commerce, AI and digital services.</p>
+      <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,3.4vw,42px); font-weight:700; line-height:1.15; margin:0 0 14px; color:#14120f;">Client work across salon software, lending and fintech</h2>
+      <p style="font-size:15.5px; color:#3a3632; line-height:1.7; margin:0;">Case studies from products I designed, and in some cases built, for real companies.</p>
     </div>
 
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:32px;">
 
-      <!-- TAXORA: FEATURED -->
+      <!-- VHAYE: FEATURED -->
       <div class="work-card-wrap" style="grid-column:1/-1;">
-      <a class="ps10" href="taxora/index.html" data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease, box-shadow .3s ease, translate .3s ease; grid-column:1/-1; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); background:#fff; border:1px solid #e4dfd7; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(15,14,13,.05);">
-        <div style="position:relative; aspect-ratio:16/11; overflow:hidden; background:#14120f;">
-          <img class="ps11" src="https://pub-db93d8d81d4143edada776616c5d081b.r2.dev/taxora/Toxora.jpg" alt="Taxora crypto-tax platform desktop interface" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease;" />
-          
-          <span style="position:absolute; top:16px; left:16px; font-family:'DM Mono',monospace; font-size:10px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; background:#c8863a; color:#fff; padding:5px 12px; border-radius:4px;">Featured flagship</span>
+      <a class="ps10" href="vhaye/index.html" data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease, box-shadow .3s ease, translate .3s ease; grid-column:1/-1; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); background:#fff; border:1px solid #e4dfd7; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(15,14,13,.05);">
+        <div style="position:relative; aspect-ratio:16/11; overflow:hidden; background:#0f0e0d;">
+          <img class="ps11" src="vhaye/img/01-cover.jpg" alt="Vhaye salon app screens: customer home, booking a service and the salon calendar" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease;" />
+          <span style="position:absolute; top:16px; left:16px; font-family:'DM Mono',monospace; font-size:10px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; background:#c8863a; color:#fff; padding:5px 12px; border-radius:4px;">Featured</span>
         </div>
         <div style="padding:clamp(28px,3.5vw,44px); display:flex; flex-direction:column; justify-content:center; gap:14px;">
-          <p style="font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#7a736a; margin:0;">Fintech · Website Design · Interview Design Challenge</p>
-          <h3 style="font-family:'Playfair Display',serif; font-size:clamp(24px,2.6vw,32px); font-weight:700; margin:0; color:#14120f;">Taxora</h3>
-          <p style="font-size:15px; color:#3a3632; line-height:1.7; margin:0;">A crypto-tax platform designed to help investors understand complex tax services and move towards filing with greater clarity and confidence.</p>
-          <p style="font-family:'DM Mono',monospace; font-size:12px; color:#7a736a; margin:0;">Sole UI/UX Designer · 1-day design challenge</p>
+          <p style="font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#7a736a; margin:0;">Salon software · Mobile and web · Client work</p>
+          <h3 style="font-family:'Playfair Display',serif; font-size:clamp(24px,2.6vw,32px); font-weight:700; margin:0; color:#14120f;">Vhaye</h3>
+          <p style="font-size:15px; color:#3a3632; line-height:1.7; margin:0;">A booking and salon-management platform for Vhaye &amp; Kess. I redesigned and extended the customer, stylist and admin apps across more than 300 screens, working with the Product Owner for 16 months.</p>
+          <p style="font-family:'DM Mono',monospace; font-size:12px; color:#7a736a; margin:0;">Product Designer · Nov 2024 – Mar 2026</p>
           <span style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#14120f; margin-top:6px;">
             View case study <span class="ps12" style="transition:transform .2s;">→</span>
           </span>
         </div>
       </a>
-        <a class="figma-badge" href="https://www.figma.com/design/kd0bwHUUZScGqquo9ym3t9/Portfolio-Compiling?node-id=0-1&amp;t=vOPr00RqeDfYVhuK-1" target="_blank" rel="noopener noreferrer" title="Open Taxora in Figma"><svg width="11" height="16" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19z"/><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg> Figma</a>
+      </div>
+
+      <!-- FANCREST -->
+      <div class="work-card-wrap">
+      <a class="ps23" href="fancrest/index.html" data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease, box-shadow .3s ease, translate .3s ease; display:flex; flex-direction:column; background:#fff; border:1px solid #e4dfd7; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(15,14,13,.05);">
+        <div style="position:relative; aspect-ratio:16/11; overflow:hidden; background:#0c1628;">
+          <img class="ps11" src="fancrest/img/01-cover.jpg" alt="Fancrest loan website on desktop and mobile" loading="lazy" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease;" />
+        </div>
+        <div style="padding:26px 26px 30px; display:flex; flex-direction:column; gap:10px; flex:1;">
+          <p style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#7a736a; margin:0;">Lending · Design and build · Client work</p>
+          <h3 style="font-family:'Playfair Display',serif; font-size:20px; font-weight:700; margin:0; color:#14120f;">Fancrest</h3>
+          <p style="font-size:14px; color:#3a3632; line-height:1.65; margin:0;">A loan-first website for an Abuja lender, with every cost on the page and WhatsApp as the first step. Designed in Figma, built in HTML, CSS and JavaScript.</p>
+          <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:#7a736a; margin:6px 0 0;">Designer &amp; Front-End Developer · Live</p>
+          <span style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#14120f; margin-top:8px;">
+            View case study <span class="ps12" style="transition:transform .2s;">→</span>
+          </span>
+        </div>
+      </a>
+        <a class="figma-badge" href="https://www.figma.com/design/kd0bwHUUZScGqquo9ym3t9/Portfolio-Compiling?node-id=2122-2" target="_blank" rel="noopener noreferrer" title="Open Fancrest in Figma"><svg width="11" height="16" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19z"/><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg> Figma</a>
+      </div>
+
+      <!-- KOKOPAY & KOKOSEND -->
+      <div class="work-card-wrap">
+      <a class="ps19" href="kokopay-kokosend/index.html" data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease, box-shadow .3s ease, translate .3s ease; display:flex; flex-direction:column; background:#fff; border:1px solid #e4dfd7; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(15,14,13,.05);">
+        <div style="position:relative; aspect-ratio:16/11; overflow:hidden; background:#0e0f13;">
+          <img class="ps11" src="kokopay-kokosend/img/01-cover.jpg" alt="Kokopay home page in light mode and Kokosend home page in dark mode" loading="lazy" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease;" />
+        </div>
+        <div style="padding:26px 26px 30px; display:flex; flex-direction:column; gap:10px; flex:1;">
+          <p style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#7a736a; margin:0;">Fintech · Paid client work · Website redesign</p>
+          <h3 style="font-family:'Playfair Display',serif; font-size:20px; font-weight:700; margin:0; color:#14120f;">Kokopay &amp; Kokosend</h3>
+          <p style="font-size:14px; color:#3a3632; line-height:1.65; margin:0;">Two fintech website redesigns for one company, built on a shared system in light and dark mode. Both are live.</p>
+          <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:#7a736a; margin:6px 0 0;">Sole UI/UX Designer · ~5 days per site</p>
+          <span style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#14120f; margin-top:8px;">
+            View case study <span class="ps12" style="transition:transform .2s;">→</span>
+          </span>
+        </div>
+      </a>
+        <a class="figma-badge" href="https://www.figma.com/design/kd0bwHUUZScGqquo9ym3t9/Portfolio-Compiling?node-id=2129-2" target="_blank" rel="noopener noreferrer" title="Open Kokopay &amp; Kokosend in Figma"><svg width="11" height="16" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19z"/><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg> Figma</a>
       </div>
 
       <!-- SOCIAL COMMERCE PLATFORM -->
@@ -166,43 +209,23 @@
         <a class="figma-badge" href="https://www.figma.com/design/kd0bwHUUZScGqquo9ym3t9/Portfolio-Compiling?node-id=177-38009&amp;t=vOPr00RqeDfYVhuK-1" target="_blank" rel="noopener noreferrer" title="Open Taskmind in Figma"><svg width="11" height="16" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19z"/><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg> Figma</a>
       </div>
 
-      <!-- KOKOPAY & KOKOSEND -->
+      <!-- TAXORA -->
       <div class="work-card-wrap">
-      <a class="ps19" href="kokopay-kokosend/index.html" data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease, box-shadow .3s ease, translate .3s ease; display:flex; flex-direction:column; background:#fff; border:1px solid #e4dfd7; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(15,14,13,.05);">
-        <div style="position:relative; aspect-ratio:16/11; overflow:hidden; background:#f0ede8; display:grid; grid-template-columns:1fr 1fr;">
-          <img class="ps20" src="https://pub-db93d8d81d4143edada776616c5d081b.r2.dev/kp_ks/img/kokopay.jpg" alt="Kokopay website redesign" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease;" />
-          <img class="ps21" src="https://pub-db93d8d81d4143edada776616c5d081b.r2.dev/kp_ks/img/kokosend.jpg" alt="Kokosend website redesign" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease; border-left:1px solid #e4dfd7;" />
+      <a class="ps16" href="taxora/index.html" data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease, box-shadow .3s ease, translate .3s ease; display:flex; flex-direction:column; background:#fff; border:1px solid #e4dfd7; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(15,14,13,.05);">
+        <div style="position:relative; aspect-ratio:16/11; overflow:hidden; background:#14120f;">
+          <img class="ps11" src="https://pub-db93d8d81d4143edada776616c5d081b.r2.dev/taxora/Toxora.jpg" alt="Taxora crypto-tax platform desktop interface" loading="lazy" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease;" />
         </div>
         <div style="padding:26px 26px 30px; display:flex; flex-direction:column; gap:10px; flex:1;">
-          <p style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#7a736a; margin:0;">Fintech · Paid Client Work · Website Redesign</p>
-          <h3 style="font-family:'Playfair Display',serif; font-size:20px; font-weight:700; margin:0; color:#14120f;">Kokopay &amp; Kokosend</h3>
-          <p style="font-size:14px; color:#3a3632; line-height:1.65; margin:0;">Two conversion-focused desktop website redesigns created for the same fintech client.</p>
-          <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:#7a736a; margin:6px 0 0;">Sole UI/UX Designer · ~5 days per site</p>
+          <p style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#7a736a; margin:0;">Fintech · Website design · Design challenge</p>
+          <h3 style="font-family:'Playfair Display',serif; font-size:20px; font-weight:700; margin:0; color:#14120f;">Taxora</h3>
+          <p style="font-size:14px; color:#3a3632; line-height:1.65; margin:0;">A crypto-tax platform designed to help investors understand complex tax services and move towards filing with confidence.</p>
+          <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:#7a736a; margin:6px 0 0;">Sole UI/UX Designer · 1-day design challenge</p>
           <span style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#14120f; margin-top:8px;">
-            View case study <span class="ps22" style="transition:transform .2s;">→</span>
+            View case study <span class="ps12" style="transition:transform .2s;">→</span>
           </span>
         </div>
       </a>
-        <a class="figma-badge" href="https://www.figma.com/design/kd0bwHUUZScGqquo9ym3t9/Portfolio-Compiling?node-id=172-1508&amp;t=vOPr00RqeDfYVhuK-1" target="_blank" rel="noopener noreferrer" title="Open Kokopay &amp; Kokosend in Figma"><svg width="11" height="16" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19z"/><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg> Figma</a>
-      </div>
-
-      <!-- FANCREST -->
-      <div class="work-card-wrap">
-      <a class="ps23" href="fancrest/index.html" data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease, box-shadow .3s ease, translate .3s ease; display:flex; flex-direction:column; background:#fff; border:1px solid #e4dfd7; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; box-shadow:0 2px 10px rgba(15,14,13,.05);">
-        <div style="position:relative; aspect-ratio:16/11; overflow:hidden; background:#0a1128;">
-          <img class="ps24" src="https://pub-db93d8d81d4143edada776616c5d081b.r2.dev/Fancrest/fancrest.jpg" alt="Fancrest financial-services website redesign, home page" style="width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s ease;" />
-        </div>
-        <div style="padding:26px 26px 30px; display:flex; flex-direction:column; gap:10px; flex:1;">
-          <p style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#7a736a; margin:0;">Financial Services · Self-Initiated Website Redesign</p>
-          <h3 style="font-family:'Playfair Display',serif; font-size:20px; font-weight:700; margin:0; color:#14120f;">Fancrest</h3>
-          <p style="font-size:14px; color:#3a3632; line-height:1.65; margin:0;">A multi-page website redesign for an existing Nigerian financial-services company, exploring greater clarity and credibility.</p>
-          <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:#7a736a; margin:6px 0 0;">Sole UI/UX Designer · Self-initiated exploration</p>
-          <span style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#14120f; margin-top:8px;">
-            View case study <span class="ps25" style="transition:transform .2s;">→</span>
-          </span>
-        </div>
-      </a>
-        <a class="figma-badge" href="https://www.figma.com/design/kd0bwHUUZScGqquo9ym3t9/Portfolio-Compiling?node-id=147-2&amp;t=vOPr00RqeDfYVhuK-1" target="_blank" rel="noopener noreferrer" title="Open Fancrest in Figma"><svg width="11" height="16" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19z"/><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg> Figma</a>
+        <a class="figma-badge" href="https://www.figma.com/design/kd0bwHUUZScGqquo9ym3t9/Portfolio-Compiling?node-id=0-1&amp;t=vOPr00RqeDfYVhuK-1" target="_blank" rel="noopener noreferrer" title="Open Taxora in Figma"><svg width="11" height="16" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19z"/><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg> Figma</a>
       </div>
 
     </div>
@@ -221,13 +244,12 @@
           <span style="width:24px; height:1px; background:#c8863a; display:block;"></span>
           About
         </p>
-        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(26px,3vw,36px); font-weight:700; line-height:1.2; margin:0 0 20px; color:#14120f;">Curiosity led me to design. Problem-solving made me stay.</h2>
-        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 16px;">My journey into product design began with a curiosity about computers and how digital products work. While developing my computer skills, I discovered UI/UX design and became interested in how technology could be made clearer and easier for people to use.</p>
-        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 16px;">I began learning independently through Coursera and YouTube before investing in specialised courses, practical training and internships. Over time, I progressed from learning Figma to designing end-to-end experiences across mobile applications, web platforms, marketplaces, AI products and service-based platforms.</p>
-        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 28px;">My background in Microbiology strengthened my curiosity, analytical thinking and interest in research. Today, I apply those qualities to understanding users, structuring complex information and creating thoughtful digital experiences.</p>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(26px,3vw,36px); font-weight:700; line-height:1.2; margin:0 0 20px; color:#14120f;">I learned to build before I learned to design.</h2>
+        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 16px;">I started in 2020 as a freelance front-end developer, building websites in HTML, CSS and JavaScript while studying Microbiology at Obafemi Awolowo University. Turning other people's designs into working pages made me curious about the decisions behind them.</p>
+        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 16px;">By 2022 I was designing products myself, starting with a mobile app, website and admin dashboard for one client. Since then I have designed salon software, fintech and lending websites, and e-commerce, and I still build: Fancrest and Togedab are sites I designed and shipped myself.</p>
+        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 28px;">Knowing how things get built changes how I design. I hand over screens developers can actually implement, and my science background keeps me asking for evidence before I decide.</p>
        <!-- <a class="ps26" href="#" style="display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#14120f; text-decoration:none; border-bottom:1.5px solid #c8863a; padding-bottom:3px;">
           More about me → -->
-        </a>
       </div>
     </div>
   </section>
@@ -309,34 +331,74 @@
         <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
           <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
             <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer</h3>
-            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Nov 2024 – Mar 2026</span>
+            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Jun 2026 – Present</span>
           </div>
-          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Vhaye &amp; Kess</p>
-          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Designed a B2B2C salon-management platform across mobile and web, working alongside the product owner to translate business requirements into user flows and interfaces.</p>
+          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Soma Concepts</p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Redesigning the Airgo app's flows, hierarchy and interface, and designing the e-commerce website for Sidi and Sons.</p>
         </div>
         <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
           <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
-            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">UI/UX Designer</h3>
+            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer &amp; Front-End Developer</h3>
+            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">May 2026 – Jul 2026</span>
+          </div>
+          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Fancrest Investment Limited</p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Designed and built the company's five-page lending website, including a WhatsApp loan-enquiry journey. Also supported the HR function.</p>
+        </div>
+        <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer</h3>
+            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Jun 2026</span>
+          </div>
+          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Kokopay &amp; Kokosend</p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Redesigned 11 website screens across both products, in light and dark mode, from one shared set of components. Both sites are live.</p>
+        </div>
+        <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer &amp; Front-End Developer</h3>
+            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Aug 2026</span>
+          </div>
+          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Togedab</p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Designed and built the company website, from information architecture to a live, responsive front-end.</p>
+        </div>
+        <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer</h3>
+            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Nov 2024 – Mar 2026</span>
+          </div>
+          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Vhaye &amp; Kess</p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Redesigned and expanded 300+ screens across the customer, service-provider and admin apps of a salon-booking platform, on mobile and web.</p>
+        </div>
+        <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">UX/UI Designer</h3>
             <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Jun 2024 – Sep 2024</span>
           </div>
           <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Sleeky Programmers</p>
-          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Contributed to digital products across financial administration, human-resource management and agricultural commerce.</p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Designed responsive interfaces for HR management, church finance and agricultural marketplace products, with reusable components.</p>
+        </div>
+        <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Freelance Product Designer &amp; Front-End Developer</h3>
+            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">2020 – 2024</span>
+          </div>
+          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Self-employed</p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Built client websites in HTML, CSS and JavaScript, and designed a client's mobile app, website and admin dashboard in 2022.</p>
         </div>
       </div>
 
       <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; display:flex; gap:clamp(24px,4vw,48px); flex-wrap:wrap; margin-bottom:36px;">
         <div>
-          <p style="font-size:14px; color:#faf8f5; margin:0 0 4px; font-weight:600;">Dev &amp; Design, Product Designer</p>
-          <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5); margin:0;">Jan 2025 – May 2025</p>
-        </div>
-        <div>
           <p style="font-size:14px; color:#faf8f5; margin:0 0 4px; font-weight:600;">HNG Internship, Product Designer</p>
           <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5); margin:0;">Oct 2025 – Dec 2025</p>
         </div>
+        <div>
+          <p style="font-size:14px; color:#faf8f5; margin:0 0 4px; font-weight:600;">Dev &amp; Design, Product Designer</p>
+          <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5); margin:0;">Jan 2025 – May 2025</p>
+        </div>
       </div>
 
-      <a class="ps27" href="#" style="display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#f5c97a; text-decoration:none; border-bottom:1.5px solid #f5c97a; padding-bottom:3px;">
-        View full experience →
+      <a class="ps27" href="Damilola_Tolufashe_CV.pdf" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#f5c97a; text-decoration:none; border-bottom:1.5px solid #f5c97a; padding-bottom:3px;">
+        Read my full CV
       </a>
     </div>
   </section>
@@ -379,17 +441,18 @@
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:clamp(32px,5vw,64px);">
         <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;">
           <p style="font-family:'DM Mono',monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:#7a736a; margin:0 0 10px;">Education</p>
+          <h3 style="font-family:'Playfair Display',serif; font-size:19px; font-weight:700; margin:0 0 6px; color:#14120f;">Master of Public Health (in progress)</h3>
+          <p style="font-size:14px; color:#3a3632; margin:0 0 22px;">Ahmadu Bello University, Distance Learning Centre · 2026–present</p>
           <h3 style="font-family:'Playfair Display',serif; font-size:19px; font-weight:700; margin:0 0 6px; color:#14120f;">B.Sc. Microbiology</h3>
           <p style="font-size:14px; color:#3a3632; margin:0;">Obafemi Awolowo University · 2017–2023</p>
         </div>
         <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;">
           <p style="font-family:'DM Mono',monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:#7a736a; margin:0 0 10px;">Selected learning</p>
           <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;">
-            <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>Foundations of User Experience Design</span><span style="color:#7a736a; white-space:nowrap;">Coursera, 2023</span></li>
-            <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>Product Design Trainee</span><span style="color:#7a736a; white-space:nowrap;">Zuri Training, 2023</span></li>
-            <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>User Interface &amp; User Experience Design</span><span style="color:#7a736a; white-space:nowrap;">Dev &amp; Design, 2025</span></li>
+            <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>Figma UI/UX Design (Advanced)</span><span style="color:#7a736a; white-space:nowrap;">Udemy, 2026</span></li>
+            <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>Gateway Program, UI/UX Design</span><span style="color:#7a736a; white-space:nowrap;">CcHub &amp; Mastercard Foundation, 2026</span></li>
             <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>Product Designer</span><span style="color:#7a736a; white-space:nowrap;">HNG Internship, 2025</span></li>
-            <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>Figma UI/UX Design Advanced</span><span style="color:#7a736a; white-space:nowrap;">Udemy, 2025</span></li>
+            <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #e4dfd7; padding-bottom:9px;"><span>UI &amp; UX Design</span><span style="color:#7a736a; white-space:nowrap;">Dev &amp; Design, 2025</span></li>
             <li style="font-size:14px; color:#3a3632; display:flex; justify-content:space-between; gap:12px;"><span>Framer</span><span style="color:#7a736a; white-space:nowrap;">Skillshare, 2025</span></li>
           </ul>
         </div>
@@ -401,7 +464,7 @@
   <section id="contact" style="background:#14120f; color:#faf8f5;">
     <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; max-width:760px; margin:0 auto; padding:clamp(64px,10vw,120px) clamp(20px,4vw,48px); text-align:center;">
       <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,4vw,46px); font-weight:700; line-height:1.15; margin:0 0 20px; color:#faf8f5;">Have a product challenge, opportunity or idea worth exploring?</h2>
-      <p style="font-size:16px; color:rgba(250,248,245,.65); line-height:1.7; margin:0 0 36px;">I'm open to remote Product Design, UI/UX, UX and UI Design opportunities worldwide, postgraduate study and thoughtful collaborations.</p>
+      <p style="font-size:16px; color:rgba(250,248,245,.65); line-height:1.7; margin:0 0 36px;">I'm open to remote product design and front-end roles worldwide, and to freelance projects where design and build sit with one person.</p>
       <div style="display:flex; align-items:center; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:32px;">
         <a class="ps28" href="mailto:damilolatolufashe0@gmail.com" style="display:inline-flex; align-items:center; gap:10px; padding:16px 32px; background:#c8863a; color:#fff; font-size:14px; font-weight:600; border-radius:8px; text-decoration:none; transition:all .2s;">
           Send an email
@@ -411,6 +474,7 @@
       <div style="display:flex; align-items:center; justify-content:center; gap:28px;">
         <a class="ps29" href="https://www.linkedin.com/in/damilola-tolufashe-a46806227/" target="_blank" rel="noopener noreferrer" style="font-size:13px; font-weight:600; color:rgba(250,248,245,.7); text-decoration:none; border-bottom:1px solid transparent;">LinkedIn</a>
         <a class="ps30" href="https://www.behance.net/Damitolu/" target="_blank" rel="noopener noreferrer" style="font-size:13px; font-weight:600; color:rgba(250,248,245,.7); text-decoration:none; border-bottom:1px solid transparent;">Behance</a>
+        <a class="ps30" href="https://github.com/IbkTe" target="_blank" rel="noopener noreferrer" style="font-size:13px; font-weight:600; color:rgba(250,248,245,.7); text-decoration:none; border-bottom:1px solid transparent;">GitHub</a>
       </div>
     </div>
   </section>
@@ -422,7 +486,7 @@
     <div style="max-width:1360px; margin:0 auto; padding:48px clamp(20px,4vw,48px) 32px; display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; justify-content:space-between;">
       <div>
         <p style="font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:#faf8f5; margin:0 0 6px;">Damilola Tolufashe</p>
-        <p style="font-size:13px; margin:0 0 4px;">Product Designer &amp; UI/UX Designer</p>
+        <p style="font-size:13px; margin:0 0 4px;">Product Designer &amp; Front-End Developer</p>
         <p style="font-size:13px; margin:0;">Nigeria · Open to remote opportunities worldwide</p>
       </div>
       <div style="display:flex; gap:24px; flex-wrap:wrap;">
