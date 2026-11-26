@@ -28,6 +28,18 @@
     }
     a:focus-visible { outline:2px solid #c8863a; outline-offset:3px; }
   </style>
+
+  <style>
+    /* compact header on phones */
+    @media (max-width: 640px) {
+      nav > div { padding: 12px 16px !important; gap: 12px !important; flex-wrap: nowrap !important; }
+      nav > div > a:first-child { font-size: 17px !important; white-space: nowrap; }
+      nav ul { gap: 14px !important; flex-wrap: nowrap !important; }
+      nav ul li.nav-extra { display: none; }
+      nav ul a { font-size: 13px !important; }
+      nav ul li:last-child a { padding: 8px 14px !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -42,8 +54,8 @@
       <a href="#main" style="font-family:'Playfair Display', Georgia, serif; font-size:19px; font-weight:700; color:#14120f; text-decoration:none; letter-spacing:-.01em;">Damilola Tolufashe</a>
       <ul style="list-style:none; display:flex; align-items:center; gap:clamp(16px,2.4vw,32px); margin:0; padding:0; flex-wrap:wrap;">
         <li><a class="ps2" href="#work" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">Work</a></li>
-        <li><a class="ps3" href="#about" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">About</a></li>
-        <li><a class="ps4" href="#experience" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">Experience</a></li>
+        <li class="nav-extra"><a class="ps3" href="#about" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">About</a></li>
+        <li class="nav-extra"><a class="ps4" href="#experience" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">Experience</a></li>
         <li><a class="ps5" href="Damilola_Tolufashe_CV.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:#3a3632; text-decoration:none; padding-bottom:4px; border-bottom:1px solid transparent; transition:color .15s,border-color .15s;">CV</a></li>
         <li>
           <a class="ps6" href="#contact" style="font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; letter-spacing:.03em; color:#faf8f5; background:#14120f; padding:10px 20px; border-radius:8px; text-decoration:none; transition:background .2s;">Contact</a>
@@ -246,7 +258,7 @@
         </p>
         <h2 style="font-family:'Playfair Display',serif; font-size:clamp(26px,3vw,36px); font-weight:700; line-height:1.2; margin:0 0 20px; color:#14120f;">I learned to build before I learned to design.</h2>
         <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 16px;">I started in 2020 as a freelance front-end developer, building websites in HTML, CSS and JavaScript while studying Microbiology at Obafemi Awolowo University. Turning other people's designs into working pages made me curious about the decisions behind them.</p>
-        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 16px;">By 2022 I was designing products myself, starting with a mobile app, website and admin dashboard for one client. Since then I have designed salon software, fintech and lending websites, and e-commerce, and I still build: Fancrest and Togedab are sites I designed and shipped myself.</p>
+        <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 16px;">By 2022 I was designing products myself, starting with a mobile app, website and admin dashboard for one client. Since then I have designed salon software, fintech and lending websites, and e-commerce, and I still build: Fancrest and <a href="https://togedab.vercel.app/" target="_blank" rel="noopener" style="color:#14120f; text-decoration:underline; text-decoration-color:#c8863a; text-underline-offset:3px;">Togedab</a> are sites I designed and shipped myself.</p>
         <p style="font-size:15.5px; color:#3a3632; line-height:1.8; margin:0 0 28px;">Knowing how things get built changes how I design. I hand over screens developers can actually implement, and my science background keeps me asking for evidence before I decide.</p>
        <!-- <a class="ps26" href="#" style="display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#14120f; text-decoration:none; border-bottom:1.5px solid #c8863a; padding-bottom:3px;">
           More about me → -->
@@ -339,6 +351,14 @@
         <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
           <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
             <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer &amp; Front-End Developer</h3>
+            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Aug 2026</span>
+          </div>
+          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;"><a href="https://togedab.vercel.app/" target="_blank" rel="noopener" style="color:#f5c97a; text-decoration:underline; text-underline-offset:3px;">Togedab</a></p>
+          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Designed and built the company website, from information architecture to a live, responsive front-end.</p>
+        </div>
+        <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
+            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer &amp; Front-End Developer</h3>
             <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">May 2026 – Jul 2026</span>
           </div>
           <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Fancrest Investment Limited</p>
@@ -351,14 +371,6 @@
           </div>
           <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Kokopay &amp; Kokosend</p>
           <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Redesigned 11 website screens across both products, in light and dark mode, from one shared set of components. Both sites are live.</p>
-        </div>
-        <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
-          <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
-            <h3 style="font-family:'Playfair Display',serif; font-size:21px; font-weight:700; margin:0; color:#faf8f5;">Product Designer &amp; Front-End Developer</h3>
-            <span style="font-family:'DM Mono',monospace; font-size:11.5px; color:rgba(250,248,245,.5);">Aug 2026</span>
-          </div>
-          <p style="font-size:13.5px; color:#f5c97a; margin:0 0 14px;">Togedab</p>
-          <p style="font-size:14.5px; color:rgba(250,248,245,.7); line-height:1.75; margin:0;">Designed and built the company website, from information architecture to a live, responsive front-end.</p>
         </div>
         <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.12);">
           <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
@@ -386,6 +398,7 @@
         </div>
       </div>
 
+      <p data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:rgba(250,248,245,.5); margin:0 0 14px;">Design programmes</p>
       <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; display:flex; gap:clamp(24px,4vw,48px); flex-wrap:wrap; margin-bottom:36px;">
         <div>
           <p style="font-size:14px; color:#faf8f5; margin:0 0 4px; font-weight:600;">HNG Internship, Product Designer</p>
@@ -421,7 +434,7 @@
       </div>
       <div data-reveal="true" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; padding:32px; background:#f0ede8; border-radius:16px; border:1px solid #e4dfd7;">
         <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:19px; line-height:1.55; color:#14120f; margin:0 0 20px;">"I really like the website. It is clean and makes very good use of whitespace."</p>
-        <p style="font-size:13.5px; font-weight:600; color:#14120f; margin:0;">Damilola</p>
+        <p style="font-size:13.5px; font-weight:600; color:#14120f; margin:0;">Samuel Adebayo</p>
         <p style="font-family:'DM Mono',monospace; font-size:11.5px; color:#7a736a; margin:2px 0 0;">Kokopay Client</p>
       </div>
     </div>
