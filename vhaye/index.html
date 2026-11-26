@@ -27,6 +27,29 @@
     .cs-small:hover { color:#c8863a; }
     @media (max-width: 720px) { .cs-boards { margin:0 -4px; } .cs-boards img:first-child, .cs-boards img:last-child { border-radius:0; } }
   </style>
+
+  <style>
+    /* compact header on phones */
+    @media (max-width: 640px) {
+      nav > div { padding: 12px 16px !important; gap: 12px !important; flex-wrap: nowrap !important; }
+      nav > div > a:first-child { font-size: 17px !important; white-space: nowrap; }
+      nav ul { gap: 14px !important; flex-wrap: nowrap !important; }
+      nav ul li.nav-extra { display: none; }
+      nav ul a { font-size: 13px !important; }
+      nav ul li:last-child a { padding: 8px 14px !important; }
+    }
+  </style>
+
+  <style>
+    .cs-hint { display: none; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #7a736a; margin: 0 0 12px; }
+    .cs-zoom { position: fixed; inset: 0; z-index: 2000; background: rgba(20,18,15,.96); overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+    .cs-zoom img { display: block; width: 1440px; max-width: none; height: auto; }
+    .cs-zoom-close { position: fixed; top: 12px; right: 12px; z-index: 2001; width: 44px; height: 44px; border-radius: 50%; border: 0; background: #faf8f5; color: #14120f; font: 600 22px/1 'DM Sans', sans-serif; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,.3); }
+    @media (max-width: 900px) {
+      .cs-hint { display: block; }
+      .cs-boards img { cursor: zoom-in; }
+    }
+  </style>
 </head>
 <body>
 <a href="#case" style="position:absolute; left:-9999px; top:0;">Skip to case study</a>
@@ -37,8 +60,8 @@
       <a href="../index.html" style="font-family:'Playfair Display', Georgia, serif; font-size:19px; font-weight:700; color:#14120f; text-decoration:none;">Damilola Tolufashe</a>
       <ul style="list-style:none; display:flex; align-items:center; gap:clamp(16px,2.4vw,32px); margin:0; padding:0; flex-wrap:wrap;">
         <li><a class="ps1" href="../index.html#work" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">Work</a></li>
-        <li><a class="ps2" href="../index.html#about" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">About</a></li>
-        <li><a class="ps3" href="../index.html#experience" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">Experience</a></li>
+        <li class="nav-extra"><a class="ps2" href="../index.html#about" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">About</a></li>
+        <li class="nav-extra"><a class="ps3" href="../index.html#experience" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">Experience</a></li>
         <li><a class="ps4" href="../index.html#contact" style="font-size:13px; font-weight:600; color:#faf8f5; background:#14120f; padding:10px 20px; border-radius:8px; text-decoration:none;">Contact</a></li>
       </ul>
     </div>
@@ -58,7 +81,8 @@
     </header>
   </main>
 
-  <section class="cs-boards" aria-label="Case study">
+  <p class="cs-hint">Tap any board to see it full size</p>
+    <section class="cs-boards" aria-label="Case study">
     <img src="img/01-cover.jpg" width="1440" height="1657" alt="Vhaye case study cover: three phone screens from the customer, booking and salon calendar apps, with role, timeline and scope." decoding="async" />
     <img src="img/02-challenge.jpg" width="1440" height="891" alt="The challenge: one calendar shared by every stylist, bookings that look the same in every app, and admin tools kept one tap from the calendar." loading="lazy" decoding="async" />
     <img src="img/03-calendar.jpg" width="1440" height="1951" alt="Key decision: three iterations of the web booking calendar, from one stylist at a time to a week grid with visible service, staff and status filters, plus the final mobile calendar." loading="lazy" decoding="async" />
@@ -91,5 +115,45 @@
     </div>
   </footer>
 </div>
+
+<script>
+(function () {
+  var imgs = document.querySelectorAll('.cs-boards img');
+  if (!imgs.length) return;
+  function open(src, alt) {
+    var wrap = document.createElement('div');
+    wrap.className = 'cs-zoom';
+    wrap.setAttribute('role', 'dialog');
+    wrap.setAttribute('aria-modal', 'true');
+    wrap.setAttribute('aria-label', 'Full-size board');
+    var big = document.createElement('img');
+    big.src = src; big.alt = alt || '';
+    var btn = document.createElement('button');
+    btn.className = 'cs-zoom-close';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Close full-size view');
+    btn.textContent = '\u00d7';
+    function close() {
+      document.removeEventListener('keydown', onKey);
+      wrap.remove(); btn.remove();
+      document.documentElement.style.overflow = '';
+    }
+    function onKey(e) { if (e.key === 'Escape') close(); }
+    btn.addEventListener('click', close);
+    document.addEventListener('keydown', onKey);
+    wrap.appendChild(big);
+    document.body.appendChild(wrap);
+    document.body.appendChild(btn);
+    document.documentElement.style.overflow = 'hidden';
+    btn.focus();
+  }
+  imgs.forEach(function (img) {
+    img.addEventListener('click', function () {
+      if (window.innerWidth > 900) return;
+      open(img.currentSrc || img.src, img.alt);
+    });
+  });
+})();
+</script>
 </body>
 </html>
