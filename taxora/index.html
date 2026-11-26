@@ -25,6 +25,18 @@
     .pf-case__go i { font-style:normal; transition:transform .2s ease; }
     .pf-case:hover .pf-case__go i { transform:translateX(4px); }
   </style>
+
+  <style>
+    /* compact header on phones */
+    @media (max-width: 640px) {
+      nav > div { padding: 12px 16px !important; gap: 12px !important; flex-wrap: nowrap !important; }
+      nav > div > a:first-child { font-size: 17px !important; white-space: nowrap; }
+      nav ul { gap: 14px !important; flex-wrap: nowrap !important; }
+      nav ul li.nav-extra { display: none; }
+      nav ul a { font-size: 13px !important; }
+      nav ul li:last-child a { padding: 8px 14px !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -36,8 +48,8 @@
       <a href="../index.html" style="font-family:'Playfair Display', Georgia, serif; font-size:19px; font-weight:700; color:#14120f; text-decoration:none;">Damilola Tolufashe</a>
       <ul style="list-style:none; display:flex; align-items:center; gap:clamp(16px,2.4vw,32px); margin:0; padding:0; flex-wrap:wrap;">
         <li><a class="ps1" href="../index.html#work" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">Work</a></li>
-        <li><a class="ps2" href="../index.html#about" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">About</a></li>
-        <li><a class="ps3" href="../index.html#experience" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">Experience</a></li>
+        <li class="nav-extra"><a class="ps2" href="../index.html#about" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">About</a></li>
+        <li class="nav-extra"><a class="ps3" href="../index.html#experience" style="font-size:14px; font-weight:500; color:#3a3632; text-decoration:none;">Experience</a></li>
         <li><a class="ps4" href="../index.html#contact" style="font-size:13px; font-weight:600; color:#faf8f5; background:#14120f; padding:10px 20px; border-radius:8px; text-decoration:none;">Contact</a></li>
       </ul>
     </div>
@@ -123,17 +135,15 @@
     <div style="max-width:1360px; margin:0 auto; padding:48px clamp(20px,4vw,48px) 32px; display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; justify-content:space-between;">
       <div>
         <p style="font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:#faf8f5; margin:0 0 6px;">Damilola Tolufashe</p>
-        <p style="font-size:13px; margin:0 0 4px;">Product Designer &amp; UI/UX Designer</p>
-        <p style="font-size:13px; margin:0;">Nigeria &middot; Open to remote opportunities worldwide</p>
+        <p style="font-size:13px; margin:0 0 4px;">Product Designer &amp; Front-End Developer</p>
+        <p style="font-size:13px; margin:0;">Abuja, Nigeria. Open to remote work worldwide.</p>
       </div>
       <div style="display:flex; gap:24px; flex-wrap:wrap;">
         <a href="mailto:damilolatolufashe0@gmail.com" style="font-size:13px; color:rgba(250,248,245,.55); text-decoration:none;">Email</a>
         <a href="https://www.linkedin.com/in/damilola-tolufashe-a46806227/" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:rgba(250,248,245,.55); text-decoration:none;">LinkedIn</a>
         <a href="https://www.behance.net/Damitolu/" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:rgba(250,248,245,.55); text-decoration:none;">Behance</a>
+        <a href="https://github.com/IbkTe" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:rgba(250,248,245,.55); text-decoration:none;">GitHub</a>
       </div>
-    </div>
-    <div style="max-width:1360px; margin:0 auto; padding:20px clamp(20px,4vw,48px) 32px; border-top:1px solid rgba(255,255,255,.08);">
-      <p style="font-size:12px; margin:0;">Designed with intention by Damilola Tolufashe.</p>
     </div>
   </footer>
 
